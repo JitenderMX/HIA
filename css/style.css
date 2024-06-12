@@ -1,0 +1,148 @@
+/* Base Section Start ------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary: #f5d765;
+    --secondary: #01b4bc;
+    --black: #000000;
+    --white: #ffffff;
+    --whitesmoke: #F9F9F9;
+    --font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family);
+    letter-spacing: -1px;
+    line-height: 1.2;
+}
+
+h1 {
+    color: var(--black);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+h2 {
+    color: var(--secondary);
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+p {
+    color: #262626;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 176%;
+    /* 28.16px */
+    letter-spacing: 0.16px;
+}
+
+.th-btn {
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    text-align: center;
+    padding: 20px 18px;
+    border-radius: 16px;
+    text-transform: capitalize;
+    display: inline-block;
+    min-width: 350px;
+    border: 1px solid var(--secondary);
+}
+
+.th-btn.fill {
+    color: var(--white);
+    background: var(--secondary);
+}
+
+.th-btn.outline {
+    background: transparent;
+    color: var(--secondary);
+}
+
+/* ------------- Base Section End ------------- */
+
+/* Header Section Start ------------------------------ */
+.header {
+    height: 107px;
+    background: var(--whitesmoke);
+}
+
+/* ------------- Header Section End ------------- */
+
+
+/* Hero Section Start ------------------------------ */
+.hero h1 {
+    padding: 30px;
+    text-align: center;
+}
+
+/* ------------- Hero Section End ------------- */
+
+/* How it works Section Start ------------------------------ */
+.hoitwo-box {
+    padding: 50px 0px;
+    background-color: var(--whitesmoke);
+}
+
+.hoitwo-img {
+    width: 100%;
+    max-width: 150px;
+    margin: auto;
+}
+.hoitwo-pera{
+    background-color: var(--primary);
+    border-radius: 16px;
+    padding: 30px;
+margin: 30px auto;
+}
+.hoitwo-pera p{
+    text-align: center;
+    max-width: 900px;
+}
+/* ------------- How it works Section End ------------- */
+
+/* Footer Section Start ------------------------------ */
+.footer{
+    background-color: var(--secondary);
+    padding: 80px 0px;
+}
+.fo-box{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.fo-img{
+    max-width: 300px;
+}
+.fo-line{
+    width: 2px;
+    background-color: var(--white);
+    height: 200px;
+}
+.fo-link{
+    max-width: 400px;
+}
+.fo-box a{
+    color: var(--white);
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.16px;
+}
+/* ------------- Footer Section End ------------- */
