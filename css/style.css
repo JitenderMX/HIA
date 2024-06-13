@@ -1,6 +1,6 @@
 /* Base Section Start ------------------------------ */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --primary: #f5d765;
@@ -9,6 +9,7 @@
     --white: #ffffff;
     --whitesmoke: #F9F9F9;
     --font-family: "Poppins", sans-serif;
+    --font-family-inter: "Inter", sans-serif;
 }
 
 a {
@@ -61,6 +62,9 @@ p {
     display: inline-block;
     min-width: 350px;
     border: 1px solid var(--secondary);
+    cursor: pointer;
+    user-select: none;
+    transition: all .5s;
 }
 
 .th-btn.fill {
@@ -68,9 +72,19 @@ p {
     background: var(--secondary);
 }
 
+.th-btn.fill:hover{
+    background: transparent;
+    color: var(--secondary);
+}
+
 .th-btn.outline {
     background: transparent;
     color: var(--secondary);
+}
+
+.th-btn.outline:hover{
+    color: var(--white);
+    background: var(--secondary);
 }
 
 /* ------------- Base Section End ------------- */
@@ -103,40 +117,201 @@ p {
     max-width: 150px;
     margin: auto;
 }
-.hoitwo-pera{
+
+.hoitwo-pera {
     background-color: var(--primary);
     border-radius: 16px;
     padding: 30px;
-margin: 30px auto;
+    margin: 30px auto;
 }
-.hoitwo-pera p{
+
+.hoitwo-pera p {
     text-align: center;
     max-width: 900px;
 }
+
 /* ------------- How it works Section End ------------- */
 
+/* Book Obituary Section Start ------------------------------ */
+.boobit-container {
+    margin: 50px 0px;
+    padding: 50px;
+    background-color: var(--whitesmoke);
+}
+
+.boobit-box {
+    padding: 50px;
+    background-color: var(--white);
+    border-radius: 16px;
+}
+
+#boobit-img {
+    width: 464px;
+    padding: 40px 0px;
+    margin: auto;
+    background-color: var(--white);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all .5s;
+}
+
+#boobit-img .boobit-head {
+    color: var(--secondary);
+    font-family: var(--font-family-inter);
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 144%;
+    /* 23.04px */
+    text-transform: capitalize;
+    text-align: center;
+    /* margin-bottom: 10px; */
+}
+
+#boobit-img .boobit-img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    top: 20px;
+}
+
+#boobit-img .boobit-text {
+    width: 303px;
+    padding: 20px;
+    padding-top: 30px;
+    background-color: var(--secondary);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#boobit-img .boobit-text .boobit-name {
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 144%;
+    /* 25.92px */
+    display: flex;
+    gap: 3px;
+    border-bottom: 1px solid var(--primary);
+}
+
+#boobit-img .boobit-text .boobit-details,
+#boobit-img .boobit-text .boobit-service,
+#boobit-img .boobit-text .boobit-life-spam {
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 144%;
+    display: flex;
+    gap: 4px;
+    margin-top: 10px;
+}
+
+#boobit-img .boobit-h-grif,
+#boobit-img .boobit-greif {
+    font-family: var(--font-family-inter);
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 144%;
+    /* 20.16px */
+    text-align: center;
+}
+
+#boobit-img .boobit-h-grif{
+    color: var(--black);
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+}
+#boobit-img .boobit-greif{
+    color: #686868;
+    margin-bottom: 20px;
+}
+#apply-change{
+    padding: 8px;
+    border-radius: 16px;
+    text-transform: capitalize;
+    display: inline-block;
+    min-width: 250px;
+    border: 1px solid var(--secondary);
+    margin: auto;
+    margin-top: 15px;
+}
+.up-img {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #9E9E9E;
+    background: #EEE;
+    text-align: center;
+    cursor: pointer;
+}
+
+.up-img img {
+    width: 100%;
+    max-width: 100px;
+}
+
+form .mb-3 {
+    position: relative;
+}
+
+.form-control,
+.form-select {
+    padding: 22px;
+    color: #2E2E2E;
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 144%;
+}
+
+.ob-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #2E2E2E;
+}
+
+/* ------------- Book Obituary Section End ------------- */
+
 /* Footer Section Start ------------------------------ */
-.footer{
+.footer {
     background-color: var(--secondary);
     padding: 80px 0px;
 }
-.fo-box{
+
+.fo-box {
     display: flex;
     align-items: center;
     gap: 30px;
 }
-.fo-img{
+
+.fo-img {
     max-width: 300px;
 }
-.fo-line{
+
+.fo-line {
     width: 2px;
     background-color: var(--white);
     height: 200px;
 }
-.fo-link{
+
+.fo-link {
     max-width: 400px;
 }
-.fo-box a{
+
+.fo-box a {
     color: var(--white);
     font-family: var(--font-family);
     font-size: 16px;
@@ -145,4 +320,5 @@ margin: 30px auto;
     line-height: normal;
     letter-spacing: 0.16px;
 }
+
 /* ------------- Footer Section End ------------- */
