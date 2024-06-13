@@ -267,6 +267,37 @@
             });
         });
     </script>
+      <script>
+
+        $(document).ready(function() {
+            let faPlusClickNum = 0;
+            $('.fa-plus').on('click', function() {
+                faPlusClickNum++;
+                var newInput = `
+                    <div class="d-flex gap-3 mb-3">
+                        <input type="text" class="form-control greif" placeholder="Person in greif">
+                        <div class="form-control w-auto"><i class="fal fa-plus"></i></div>
+                    </div>`;
+                    if(faPlusClickNum <=2){
+                        $('.greif').append(newInput);
+                    }else{
+                        alert("you can not add more then 3")
+                    }
+            });
+
+            $('#get-data').click(function() {
+                var data = [];
+                $('.greif input[type="text"]').each(function() {
+                    var value = $(this).val().trim();
+                    if (value) {
+                        data.push(value);
+                    }
+                });
+                var formattedData = data.join(' | ');
+                $('#result').text(formattedData);
+            });
+        });
+    </script>
 </body>
 
 </html>
