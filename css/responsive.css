@@ -29,24 +29,57 @@
     .boobit-box{
         padding: 10px;
     }
+    h1 {
+        font-size: calc(40px*.8);
+    }
+    
+    h2 {
+        font-size: calc(32px*.8);
+    }
+    .hoitwo-pera{
+        padding: 15px;
+    }
 }
 
 
 /* Small devices (576px and down) */
 
 @media screen and (max-width: 576px) {
+    h1 {
+        font-size: calc(40px*.7);
+    }
+    
+    h2 {
+        font-size: calc(32px*.7);
+    }
+    .hero h1 {
+        padding: 0px;
+        margin-bottom: 20px;
+    }
     .boobit-left{
-        height: 500px;
+        height: 455px;
         position: relative;
         bottom: 150px;
     }
     #boobit-img{
-        transform: scale(0.7);
+        transform: scale(0.65);
         position: relative;
        right: 70px;
        top: 70px;
     }
     .boobit-box{
         padding: 0px;
+    }
+    .hoitwo-img {
+        max-width: 130px;
+    }
+    .th-btn{
+        min-width: auto;
+        padding: 10px 15px;
+    }
+    #apply-change{
+        min-width: auto;
+        margin-top: 0px;
+        padding: 10px 15px;
     }
 }
