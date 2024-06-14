@@ -177,6 +177,11 @@ p {
     position: relative;
     top: 20px;
 }
+#boobit-img .boobit-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 #boobit-img .boobit-text {
     width: 303px;

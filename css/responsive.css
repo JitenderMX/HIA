@@ -82,4 +82,12 @@
         margin-top: 0px;
         padding: 10px 15px;
     }
+    .fo-box {
+    flex-direction: column;
+    }
+    .fo-line {
+        width: 100%;
+        background-color: var(--white);
+        height: 2px;
+    }
 }
