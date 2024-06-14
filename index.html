@@ -79,7 +79,7 @@
                         </div>
                     </div>
                     <div class="mt-2 mt-sm-5 text-center">
-                        <a href="#" class="th-btn fill">Register Now</a>
+                        <a href="" class="th-btn fill">Register Now</a>
                     </div>
                 </div>
                 <div class="hoitwo-pera">
@@ -92,7 +92,7 @@
 
 
         <!-- Book an Obituary Section Start -->
-        <section class="book-obituary">
+        <section class="book-obituary" id="book-obituary">
             <div class="container-xxl">
                 <div class="boobit-container">
                     <div class="boobit-box">
@@ -331,9 +331,20 @@
 
             return day + daySuffix(day) + " " + monthNames[monthIndex] + ", " + year;
         }
+        function validateDates() {
+        var dob = $('#date-of-birth').datepicker('getDate');
+        var dod = $('#date-of-death').datepicker('getDate');
+
+        // Check if date of death is less than date of birth
+        if (dob && dod && dob > dod) {
+            alert("Date of Death cannot be less than Date of Birth.");
+            $('#date-of-birth').val(''); // Empty date of birth input
+        }
+    }
 
         // Handle focus out event
         $('#date-of-birth').focusout(function () {
+            validateDates();
             let inputValue = $(this).val();
             if (inputValue) {
                 let date = $(this).datepicker('getDate');
@@ -343,8 +354,10 @@
                 }
             }
         });
+        
         // Handle focus out event
         $('#date-of-death').focusout(function () {
+            validateDates();
             let inputValue = $(this).val();
             if (inputValue) {
                 let date = $(this).datepicker('getDate');
