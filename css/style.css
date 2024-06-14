@@ -170,7 +170,7 @@ p {
 
 #boobit-img .boobit-img {
     width: 170px;
-    height: 170px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
     margin: auto;
@@ -184,7 +184,7 @@ p {
 }
 
 #boobit-img .boobit-text {
-    width: 303px;
+    width: 315px;
     padding: 20px;
     padding-top: 30px;
     background-color: var(--secondary);
@@ -212,7 +212,7 @@ p {
 #boobit-img .boobit-text .boobit-life-spam {
     color: var(--white);
     font-family: var(--font-family-inter);
-    font-size: 12px;
+    font-size: 9px;
     font-style: normal;
     font-weight: 400;
     line-height: 144%;
