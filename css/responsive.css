@@ -70,9 +70,7 @@
     .boobit-box{
         padding: 0px;
     }
-    .hoitwo-img {
-        max-width: 130px;
-    }
+    
     .th-btn{
         min-width: auto;
         padding: 10px 15px;
@@ -89,5 +87,8 @@
         width: 100%;
         background-color: var(--white);
         height: 2px;
+    }
+    .hoitwo-img{
+        width: 100% !important  ;
     }
 }
